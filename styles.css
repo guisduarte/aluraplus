@@ -157,92 +157,139 @@ body {
     color: var(--cor-de-fundo);
 }
 
-@media (min-width: 1440px){
-    /* Principal */
-    .principal {
-        background-size: auto;
-    }
+/* 1440px */
+@media (max-width: 1440px) {
+  .container__caixa {
+    margin: 0px 1em;
+    width: 500px;
+  }
 
 }
 
-@media  (min-width: 768px){
-    /* Principal */
-    .container {        
-        grid-template-columns: 40% 60%;
-    }
-
-    .container__caixa {
-        margin: 0 2em;
-    }
-
-    /* Dispostivos */
-    .dispositivos__titulo {
-        font-size: 30px;
-    }
-    .dispostivos__lista li {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-       align-items: center;
-       width: 250px;
-       height: 250px;
-    }
-
-     /* Rodapé */
-     .rodape__lista{
-        flex-wrap: wrap;
-    }
-
-}
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-    /* Principal */
-
-    .container {
-        grid-template-columns: 40% 60%;
-    }
-
-    .container__caixa {
-        margin: 0;
-    }
-    
-    .container__titulo {
-        font-size: 20px;
-    }
-
-    .container__imagem, .container__botao, .container__aviso {
-        min-width: 250px;
-    } 
-
-    /* Secundário */
-    .secundario {
-        display: flex;
-        flex-wrap: wrap;        
-        align-items: center;
-        padding: 5em 0;
-    }
-    
-    .secundario__imagem {
-        width: 250px;
-    }
-
-    /* Dispositivos */
-
-    .dispostivos__lista {
-        flex-wrap: wrap;
-        justify-content: center;
-       
-    }
-
-    .dispositivos__titulo {
-        font-size: 35px;
-    }
-
+/* 1240px */
+@media (max-width: 1240px) {
+  .container__caixa {   
+    width: 400px;
+  }
     /* Rodapé */
-    .rodape__lista{
-        flex-wrap: wrap;
-        padding: 2em 0;
-    }
+   .rodape__lista {
+    flex-wrap: wrap;   
+  }
+}
 
+  /* 960px */
+@media (max-width: 970px) {
+  /* Principal */
+  .container__caixa {
+    width: 300px;
+  }
+  .container__titulo {
+    font-size: 28px;
+  }
+
+  /* Secundário */
+  .descricao__titulo {
+    font-size: 30px;
+  }
+
+  /* Dispositivos */
+  .dispositivos__titulo {
+    font-size: 40px;
+  }
+
+  .dispostivos__lista {
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+  }
+
+  .container__imagem {
+    width: 280px;
+  }
+}
+
+  /* 768px */
+@media (max-width: 768px) {
+  /* Principal */
+  .container__caixa {
+    width: 200px;
+  }
+  .container__imagem {
+    width: 200px;
+  }
+
+  /* Secundario */
+  .secundario {
+    margin: 0 1em;
+  }
+  .container__descricao {
+    padding: 0; 
+  }
+  .container__titulo {
+    font-size: 20px;
+  }
+  
+}
+
+  /* 500px */
+@media (max-width: 500px) {
+   /* Principal */
+   .container__caixa {
+    width: 150px;
+  }
+  .container__imagem {
+    width: 160px;
+  }
+
+  .dispositivos__titulo {
+    font-size: 30px;
+  }
+
+  .dispostivos__lista>li>img {
+    width: 252px;
+  }
+
+  /* Rodapé */
+  .rodape__lista {
+    margin-bottom: 5em;
+  }
+}
+
+/*400px*/
+
+@media (max-width: 400px) {
+   /* Principal */
+   .container__caixa {
+    width: 115px;
+  }
+  
+  .container__imagem {
+    width: 150px;
+  }
+
+  .container__botao {
+    width: 120px;
+  }
+
+  .container__aviso {
+    width: 150px;
+  }
+  
+  /* Dispositivos */
+  .dispositivos__titulo {
+    font-size: 25px;
+  }
+
+  .dispostivos__lista>li>img {
+    width: 215px;
+  }
+
+  .lista__item {
+    font-size: 25px;
+  }
+  
+  /* Rodapé */
+  .rodape__lista {
+    margin-bottom: 5em;
+  }
+  
 }
